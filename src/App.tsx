@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import DataAnalysisCourse from './pages/DataAnalysisCourse';
 
 interface Course {
   id: string;
@@ -7,7 +9,7 @@ interface Course {
   icon: string;
 }
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
   const courses: Course[] = [
     {
       id: 'python',
@@ -48,9 +50,9 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <h1 className="text-xl font-bold text-blue-600">陈雪霜的个人页面</h1>
           <div className="hidden md:flex space-x-6">
-            <a href="#home" className="text-gray-700 hover:text-blue-600 transition-colors">首页</a>
-            <a href="#courses" className="text-gray-700 hover:text-blue-600 transition-colors">课程</a>
-            <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">关于我</a>
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors">首页</Link>
+            <Link to="/#courses" className="text-gray-700 hover:text-blue-600 transition-colors">课程</Link>
+            <Link to="/#about" className="text-gray-700 hover:text-blue-600 transition-colors">关于我</Link>
           </div>
         </div>
       </nav>
@@ -94,10 +96,17 @@ const App: React.FC = () => {
                 <div className="text-4xl mb-4">{course.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{course.name}</h3>
                 <p className="text-gray-600 mb-4">{course.description}</p>
-                <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                  查看详情
-                  <span className="ml-2">→</span>
-                </button>
+                {course.id === 'data-analysis' ? (
+                  <Link to="/courses/data-analysis" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                    查看详情
+                    <span className="ml-2">→</span>
+                  </Link>
+                ) : (
+                  <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                    查看详情
+                    <span className="ml-2">→</span>
+                  </button>
+                )}
               </div>
             ))}
           </div>
@@ -133,6 +142,17 @@ const App: React.FC = () => {
         </div>
       </footer>
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/courses/data-analysis" element={<DataAnalysisCourse />} />
+      </Routes>
+    </Router>
   );
 };
 
