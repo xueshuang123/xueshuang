@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>数据分析技术 - 陈雪霜的个人页面</title>
+    <title>数据分析技术 | 陈雪霜</title>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- 字体图标库 (Font Awesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -15,53 +14,67 @@
             <a href="../index.html" class="nav-logo">📊 陈雪霜</a>
             <ul class="nav-menu">
                 <li><a href="../index.html">首页</a></li>
-                <li><a href="../index.html#courses" class="active">课程</a></li>
+                <li><a href="data-analysis.html" class="active">课程</a></li>
                 <li><a href="#">项目</a></li>
                 <li><a href="#">关于</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- 课程详情 -->
-    <header class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <a href="../index.html#courses" class="btn btn-secondary" style="margin-bottom: 20px;">
-                    <i class="fas fa-arrow-left"></i> 返回课程列表
-                </a>
-                <h1>数据分析技术</h1>
-                <p class="subtitle">当前学期核心课程 | 大二第二学期</p>
-                <p class="hero-desc">掌握数据处理和分析的核心技术，培养数据思维和数据驱动决策能力。</p>
+    <!-- 课程头部 -->
+    <header class="course-header">
+        <div class="container">
+            <div class="course-header-content">
+                <div class="course-breadcrumb">
+                    <a href="../index.html">首页</a> <i class="fas fa-chevron-right"></i> <span>数据分析技术</span>
+                </div>
+                <div class="course-title-row">
+                    <span class="course-icon-large">📊</span>
+                    <h1>数据分析技术</h1>
+                    <span class="course-badge badge-progress">进行中 · 大二下学期</span>
+                </div>
+                <p class="course-header-desc">从“会用工具”过渡到“理解原理并解决复杂业务问题”。本课程专为已掌握Python基础和采集技术的同学设计，重点在于思维训练、特征工程和模型应用。</p>
+                <div class="course-meta">
+                    <span><i class="fas fa-calendar"></i> 2026年春季学期</span>
+                    <span><i class="fas fa-layer-group"></i> 6个模块 · 10个实战项目</span>
+                    <span><i class="fas fa-code"></i> Python + Pandas + Scikit-learn</span>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- 主要内容区 -->
     <main class="container">
-        <!-- 课程信息 -->
+        <!-- 课程概述 -->
         <section class="section">
             <h2 class="section-title">
-                <span class="title-icon">📋</span> 课程信息
+                <span class="title-icon">📖</span> 课程概述
             </h2>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <h3 class="course-title">基本信息</h3>
-                    <p class="course-desc"><strong>学期：</strong>大二第二学期</p>
-                    <p class="course-desc"><strong>学分：</strong>4</p>
-                    <p class="course-desc"><strong>总学时：</strong>64</p>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3><i class="fas fa-graduation-cap"></i> 先修要求</h3>
+                    <ul>
+                        <li>Python基础语法（变量、循环、函数）</li>
+                        <li>Pandas数据处理基础</li>
+                        <li>数据采集与处理课程</li>
+                        <li>商务数据分析基础</li>
+                    </ul>
                 </div>
-                <div class="course-card">
-                    <h3 class="course-title">先修课程</h3>
-                    <p class="course-desc">Python基础</p>
-                    <p class="course-desc">数据采集与处理</p>
-                    <p class="course-desc">商务数据分析与应用基础</p>
+                <div class="overview-card">
+                    <h3><i class="fas fa-bullseye"></i> 学习目标</h3>
+                    <ul>
+                        <li>掌握结构化思维拆解业务问题</li>
+                        <li>理解特征工程的原理与方法</li>
+                        <li>能够独立完成AB测试设计与分析</li>
+                        <li>入门机器学习并应用于商业场景</li>
+                    </ul>
                 </div>
-                <div class="course-card">
-                    <h3 class="course-title">学习目标</h3>
-                    <p class="course-desc">掌握数据分析的基本概念和方法</p>
-                    <p class="course-desc">熟练使用Python进行数据处理和分析</p>
-                    <p class="course-desc">能够运用数据分析工具解决实际商务问题</p>
-                    <p class="course-desc">培养数据思维和数据驱动决策能力</p>
+                <div class="overview-card">
+                    <h3><i class="fas fa-tasks"></i> 考核方式</h3>
+                    <ul>
+                        <li>平时作业 (30%)：6次编程作业</li>
+                        <li>课堂参与 (10%)：讨论与分享</li>
+                        <li>综合大作业 (60%)：电商全链路分析</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -69,100 +82,175 @@
         <!-- 课程大纲 -->
         <section class="section">
             <h2 class="section-title">
-                <span class="title-icon">📚</span> 课程大纲
+                <span class="title-icon">📋</span> 课程大纲
             </h2>
-            <p class="section-desc">本课程涵盖数据分析的核心概念、方法和技术，从基础理论到实战应用。</p>
-            
-            <div class="featured-section">
-                <div class="chapter">
-                    <h3 class="section-title" style="font-size: 1.5rem;">
-                        <span class="title-icon">1</span> 数据分析概述
-                    </h3>
-                    <ul class="syllabus-preview">
-                        <li><span class="module-num">1.1</span> 数据分析的基本概念 - 定义、特点、作用和应用领域</li>
-                        <li><span class="module-num">1.2</span> 数据分析的流程 - 数据获取、预处理、分析、结果展示、决策支持</li>
-                        <li><span class="module-num">1.3</span> 数据分析的方法体系 - 描述性分析、预测性分析、规范性分析</li>
-                    </ul>
+            <div class="syllabus-list">
+                <div class="syllabus-item">
+                    <div class="syllabus-header">
+                        <span class="module-num">模块 1</span>
+                        <h3>数据分析思维与进阶流程</h3>
+                    </div>
+                    <div class="syllabus-content">
+                        <p><strong>内容</strong>：回顾CRISP-DM流程，引入结构化思维（MECE原则、逻辑树、金字塔原理）拆解业务问题。对比Excel与Python分析流程的优劣。</p>
+                        <p><strong>目标</strong>：培养面对陌生数据时有清晰的切入思路。</p>
+                        <div class="syllabus-project">
+                            <i class="fas fa-flask"></i> 实战项目：业务问题拆解练习
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="chapter" style="margin-top: 40px;">
-                    <h3 class="section-title" style="font-size: 1.5rem;">
-                        <span class="title-icon">2</span> 数据预处理
-                    </h3>
-                    <ul class="syllabus-preview">
-                        <li><span class="module-num">2.1</span> 数据清洗 - 缺失值处理、异常值检测与处理、重复值处理</li>
-                        <li><span class="module-num">2.2</span> 数据集成 - 多源数据整合、数据格式转换、数据合并</li>
-                        <li><span class="module-num">2.3</span> 数据转换 - 数据标准化、归一化、离散化</li>
-                    </ul>
+                <div class="syllabus-item">
+                    <div class="syllabus-header">
+                        <span class="module-num">模块 2</span>
+                        <h3>特征工程与数据处理进阶</h3>
+                    </div>
+                    <div class="syllabus-content">
+                        <p><strong>内容</strong>：正则表达式高阶清洗、标准化(StandardScaler)与归一化(MinMaxScaler)的原理与场景、PCA主成分分析可视化。</p>
+                        <div class="syllabus-project">
+                            <i class="fas fa-flask"></i> 实战项目：《信贷用户违约特征筛选》
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="chapter" style="margin-top: 40px;">
-                    <h3 class="section-title" style="font-size: 1.5rem;">
-                        <span class="title-icon">3</span> 描述性数据分析
-                    </h3>
-                    <ul class="syllabus-preview">
-                        <li><span class="module-num">3.1</span> 数据统计描述 - 集中趋势指标、离散程度指标、分布形态指标</li>
-                        <li><span class="module-num">3.2</span> 数据可视化 - 图表类型选择、Matplotlib、Seaborn库使用</li>
-                        <li><span class="module-num">3.3</span> 数据探索性分析 - 相关性分析、分组分析、交叉分析</li>
-                    </ul>
+                <div class="syllabus-item">
+                    <div class="syllabus-header">
+                        <span class="module-num">模块 3</span>
+                        <h3>统计分析与AB测试实践</h3>
+                    </div>
+                    <div class="syllabus-content">
+                        <p><strong>内容</strong>：概率分布、中心极限定理、置信区间、假设检验(T检验/卡方检验)。AB测试全流程：样本量计算、显著性判断、业务决策。</p>
+                        <div class="syllabus-project">
+                            <i class="fas fa-flask"></i> 实战项目：《电商落地页AB测试分析》
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="chapter" style="margin-top: 40px;">
-                    <h3 class="section-title" style="font-size: 1.5rem;">
-                        <span class="title-icon">4</span> 预测性数据分析
-                    </h3>
-                    <ul class="syllabus-preview">
-                        <li><span class="module-num">4.1</span> 回归分析 - 线性回归、多元回归、多项式回归</li>
-                        <li><span class="module-num">4.2</span> 分类分析 - 逻辑回归、决策树、随机森林</li>
-                        <li><span class="module-num">4.3</span> 聚类分析 - K-means聚类、层次聚类、DBSCAN</li>
-                    </ul>
+                <div class="syllabus-item">
+                    <div class="syllabus-header">
+                        <span class="module-num">模块 4</span>
+                        <h3>机器学习入门(上) - 回归</h3>
+                    </div>
+                    <div class="syllabus-content">
+                        <p><strong>内容</strong>：线性回归、逻辑回归的原理推导与SKlearn实现。模型评估：R²、混淆矩阵、ROC/AUC曲线。</p>
+                        <div class="syllabus-project">
+                            <i class="fas fa-flask"></i> 实战项目：《员工离职预测模型》
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="chapter" style="margin-top: 40px;">
-                    <h3 class="section-title" style="font-size: 1.5rem;">
-                        <span class="title-icon">5</span> 商务数据分析应用
-                    </h3>
-                    <ul class="syllabus-preview">
-                        <li><span class="module-num">5.1</span> 销售数据分析 - 销售趋势分析、客户购买行为分析、产品销售分析</li>
-                        <li><span class="module-num">5.2</span> 客户数据分析 - 客户细分、客户价值分析、客户流失预测</li>
-                        <li><span class="module-num">5.3</span> 市场数据分析 - 市场趋势分析、竞争对手分析、市场机会识别</li>
-                    </ul>
+                <div class="syllabus-item">
+                    <div class="syllabus-header">
+                        <span class="module-num">模块 5</span>
+                        <h3>机器学习入门(下) - 聚类与关联规则</h3>
+                    </div>
+                    <div class="syllabus-content">
+                        <p><strong>内容</strong>：K-Means聚类原理与手肘法选K值、RFM用户分层模型进阶、Apriori算法与购物篮分析。</p>
+                        <div class="syllabus-project">
+                            <i class="fas fa-flask"></i> 实战项目：《超市会员RFM分层》+《商品关联规则挖掘》
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="chapter" style="margin-top: 40px;">
-                    <h3 class="section-title" style="font-size: 1.5rem;">
-                        <span class="title-icon">6</span> 数据分析工具与实践
-                    </h3>
-                    <ul class="syllabus-preview">
-                        <li><span class="module-num">6.1</span> Python数据分析库 - NumPy、Pandas、Scikit-learn</li>
-                        <li><span class="module-num">6.2</span> 数据分析案例实践 - 电商数据分析、金融数据分析、物流数据分析</li>
-                        <li><span class="module-num">6.3</span> 数据分析报告撰写 - 报告结构、可视化呈现、结论与建议</li>
-                    </ul>
+                <div class="syllabus-item">
+                    <div class="syllabus-header">
+                        <span class="module-num">模块 6</span>
+                        <h3>综合大作业</h3>
+                    </div>
+                    <div class="syllabus-content">
+                        <p><strong>内容</strong>：整合本学期知识，完成从数据清洗、探索性分析、特征工程到用户分群的完整报告。</p>
+                        <div class="syllabus-project">
+                            <i class="fas fa-flask"></i> 实战项目：《电商全链路数据分析》
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 课程资源 -->
+        <!-- 实战项目列表 -->
         <section class="section">
             <h2 class="section-title">
-                <span class="title-icon">📦</span> 课程资源
+                <span class="title-icon">💻</span> 10个梯度实战项目
             </h2>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <h3 class="course-title">参考资料</h3>
-                    <ul class="syllabus-preview" style="gap: 8px;">
-                        <li><span class="module-num">1</span> 《Python数据分析与挖掘实战》</li>
-                        <li><span class="module-num">2</span> 《商务数据分析》</li>
-                        <li><span class="module-num">3</span> 《数据可视化实战》</li>
-                    </ul>
+            <p class="section-desc">从基础到进阶，每个项目都配有业务场景、关键思维点拨和完整数据集。</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="project-level level-beginner">入门</span>
+                    <h4>项目1：咖啡店销售报表</h4>
+                    <p>掌握 groupby 聚合与排序，回答“哪一天卖得最好？”</p>
                 </div>
-                <div class="course-card">
-                    <h3 class="course-title">在线资源</h3>
-                    <ul class="syllabus-preview" style="gap: 8px;">
-                        <li><span class="module-num">1</span> Python官方文档</li>
-                        <li><span class="module-num">2</span> Kaggle数据集</li>
-                        <li><span class="module-num">3</span> 数据科学社区</li>
-                    </ul>
+                <div class="project-card">
+                    <span class="project-level level-beginner">入门</span>
+                    <h4>项目2：电商用户行为漏斗</h4>
+                    <p>计算浏览→加购→下单→支付转化率，定位流失环节。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-beginner">入门</span>
+                    <h4>项目3：会员RFM分层</h4>
+                    <p>计算最近消费(R)和频次(F)，给用户打标签。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-intermediate">进阶</span>
+                    <h4>项目4：房源数据清洗</h4>
+                    <p>处理空值、异常值、格式不一致的脏数据。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-intermediate">进阶</span>
+                    <h4>项目5：客服聊天情绪分析</h4>
+                    <p>中文分词、词云图、简单情感字典匹配。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-intermediate">进阶</span>
+                    <h4>项目6：AB测试效果评估</h4>
+                    <p>箱线图解读、异常值识别、统计显著性判断。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-intermediate">进阶</span>
+                    <h4>项目7：员工离职因素分析</h4>
+                    <p>相关性矩阵、热力图绘制、多因素关联解读。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-advanced">高阶</span>
+                    <h4>项目8：用户消费聚类画像</h4>
+                    <p>数据标准化、KMeans聚类、手肘法选K值。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-advanced">高阶</span>
+                    <h4>项目9：购物篮关联规则</h4>
+                    <p>One-Hot编码、Apriori算法、支持度与提升度。</p>
+                </div>
+                <div class="project-card">
+                    <span class="project-level level-advanced">高阶</span>
+                    <h4>项目10：月度销量预测</h4>
+                    <p>时间序列索引、移动平均、趋势与季节性分解。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 资源下载区 -->
+        <section class="section resources-section">
+            <h2 class="section-title">
+                <span class="title-icon">📁</span> 课程资源
+            </h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-database"></i>
+                    <h4>项目数据集</h4>
+                    <p>10个项目的完整CSV数据文件</p>
+                    <span class="resource-tag">即将上传</span>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h4>课程课件</h4>
+                    <p>6个模块的PPT课件</p>
+                    <span class="resource-tag">即将上传</span>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-code"></i>
+                    <h4>代码模板</h4>
+                    <p>各项目的Python代码框架</p>
+                    <span class="resource-tag">即将上传</span>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h4>学习笔记</h4>
+                    <p>核心知识点整理与总结</p>
+                    <span class="resource-tag">即将上传</span>
                 </div>
             </div>
         </section>
