@@ -1,24 +1,134 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Trae Project</title>
-    <script type="module">
-      if (import.meta.hot?.on) {
-        import.meta.hot.on('vite:error', (error) => {
-          if (error.err) {
-            console.error(
-              [error.err.message, error.err.frame].filter(Boolean).join('\n'),
-            )
-          }
-        })
-      }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈雪霜 | 商务数据分析与应用</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 字体图标库 (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">📊 陈雪霜</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="courses/data-analysis.html">课程</a></li>
+                <li><a href="#">项目</a></li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 头部个人信息区 -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="avatar">陈</div>
+                <h1>陈雪霜</h1>
+                <p class="subtitle">广东科学技术职业学院 · 商学院 · 商务数据分析与应用</p>
+                <p class="hero-desc">用数据讲故事，用分析驱动决策。这里是课程学习笔记、项目代码与心得体会的汇集地。</p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/xueshuang123/xueshuang" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="courses/data-analysis.html" class="btn btn-secondary">
+                        <i class="fas fa-book-open"></i> 开始学习
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main class="container">
+        <!-- 课程介绍 -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="title-icon">📚</span> 课程学习记录
+            </h2>
+            <p class="section-desc">这里汇集了我在数据分析专业学习中的核心课程。点击卡片可进入课程详情页，查看完整大纲、实战项目和学习笔记。</p>
+            
+            <div class="courses-grid">
+                <!-- Python基础 -->
+                <a href="courses/python-basics.html" class="course-card">
+                    <div class="course-icon">🐍</div>
+                    <h3 class="course-title">Python基础</h3>
+                    <p class="course-desc">变量、循环、函数、面向对象、Pandas入门。为数据分析打下坚实代码基础。</p>
+                    <span class="course-tag tag-done">已结课</span>
+                </a>
+                
+                <!-- 数据分析技术 (重点) -->
+                <a href="courses/data-analysis.html" class="course-card course-featured">
+                    <div class="course-icon">📊</div>
+                    <h3 class="course-title">数据分析技术 ⭐</h3>
+                    <p class="course-desc">当前学期核心课程。涵盖特征工程、统计分析、机器学习入门、综合实战。</p>
+                    <span class="course-tag tag-progress">进行中</span>
+                </a>
+
+                <!-- 数据采集与处理 -->
+                <a href="#" class="course-card">
+                    <div class="course-icon">🕷️</div>
+                    <h3 class="course-title">数据采集与处理</h3>
+                    <p class="course-desc">Requests、Scrapy框架、XPath、正则表达式、反爬策略应对。</p>
+                    <span class="course-tag tag-done">已结课</span>
+                </a>
+
+                <!-- 供应链数据分析 -->
+                <a href="#" class="course-card">
+                    <div class="course-icon">🚚</div>
+                    <h3 class="course-title">供应链数据分析</h3>
+                    <p class="course-desc">库存周转分析、需求预测、物流优化、采购决策模型。</p>
+                    <span class="course-tag tag-upcoming">未开始</span>
+                </a>
+
+                <!-- 数据库原理与应用 -->
+                <a href="#" class="course-card">
+                    <div class="course-icon">🗄️</div>
+                    <h3 class="course-title">数据库原理与应用</h3>
+                    <p class="course-desc">MySQL基础、复杂查询、窗口函数、数据库设计与范式。</p>
+                    <span class="course-tag tag-progress">进行中</span>
+                </a>
+                
+                <!-- 商务数据分析基础 -->
+                <a href="#" class="course-card">
+                    <div class="course-icon">📈</div>
+                    <h3 class="course-title">商务数据分析基础</h3>
+                    <p class="course-desc">市场篮子分析、漏斗模型、RFM模型、电商核心指标体系。</p>
+                    <span class="course-tag tag-done">已结课</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 当前重点：数据分析技术 预览 -->
+        <section class="section featured-section">
+            <div class="featured-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🎯</span> 当前重点：《数据分析技术》
+                </h2>
+                <a href="courses/data-analysis.html" class="view-all">查看完整大纲 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <p style="margin-bottom: 20px; color: #475569;">本课程专为已掌握Python基础和采集技术的同学设计，重点在于<strong>思维训练、特征工程和模型应用</strong>。</p>
+            
+            <ul class="syllabus-preview">
+                <li><span class="module-num">1</span> 思维重塑与进阶流程 — CRISP-DM、MECE原则、金字塔原理</li>
+                <li><span class="module-num">2</span> 特征工程与数据降维 — 标准化/归一化、PCA主成分分析</li>
+                <li><span class="module-num">3</span> 统计分析与AB测试 — 假设检验、置信区间、电商AB测试</li>
+                <li><span class="module-num">4</span> 机器学习入门(上) — 线性/逻辑回归、模型评估</li>
+                <li><span class="module-num">5</span> 机器学习入门(下) — K-Means聚类、RFM模型、关联规则</li>
+                <li><span class="module-num">6</span> 综合大作业 — 电商全链路分析：从清洗到策略报告</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2026 陈雪霜 | 广东科学技术职业学院 商学院 商务数据分析与应用</p>
+            <p>Powered by Cloudflare Pages | <a href="https://github.com/xueshuang123/xueshuang" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+        </div>
+    </footer>
+</body>
 </html>
